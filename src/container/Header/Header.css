@@ -1,0 +1,49 @@
+.app__header {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(
+    to bottom,
+    #F8F8F6 0%,
+    #F6F5F3 16.67%,
+    #F1EDEA 33.33%,
+    #EDE5E2 50%,
+    #E8E0DE 66.67%,
+    #E5DED8 83.33%
+);
+}
+
+.app__header-h1{
+  font-family: 'Pixelify Sans';
+  color: var(--color-blure);
+}
+/*
+
+
+  width: 100%;
+
+
+.app__wrapper-img {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.app__wrapper-img img{
+  width:100%;
+  height:100%;
+  justify-content: flex-end;
+}
+
+.app__wrapper-info {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+*/
+
+.app__wrapper-heading {
+  padding-left: 1rem;
+  font-size: 2.7rem;
+}
