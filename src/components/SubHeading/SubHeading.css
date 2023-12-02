@@ -1,0 +1,24 @@
+.app_wrapper-subheading {
+  display: flex;
+  margin: 3rem;
+  margin-left: 0rem;
+  flex-direction: column;
+}
+
+.app_wrapper-subheading_tagline {
+  width: 60%;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app_wrapper-subheading_offers {
+  margin: 1.3rem -0.3rem;
+  color: grey;
+  font-family: cursive;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.app_wrapper-subheading_offers span {
+  color: red;
+}

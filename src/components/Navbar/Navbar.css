@@ -1,0 +1,119 @@
+.app__nav {
+  /* width: 100%; */
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 1rem 2rem;
+  color:white;
+}
+
+.app__nav-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.app__nav-logo img {
+  max-width: 125px;
+}
+
+.app__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: white
+}
+
+.app__nav-list li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.app__nav-list li:hover {
+  color: grey;
+}
+
+.app__nav-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.app__nav-login a {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.app__nav-login a:hover {
+  border-bottom: 1px solid gold;
+}
+
+.app__nav-small {
+  display: none;
+}
+
+.app__nav-small_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: 0.5s ease;
+
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__nav-small_overlay .overlay__close {
+  font-size: 27px;
+  color: goldenrod;
+  cursor: pointer;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__nav-small-list {
+  list-style: none;
+}
+
+.app__nav-small-list li {
+  padding: 0.7rem;
+  cursor: pointer;
+  color: var(--color-golden);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.app__nav-small-list li:hover {
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 2050px) {
+  .app__nav-logo img {
+    width: 200px;
+  }
+  
+}
+
+@media screen and (max-width: 1150px) {
+  .app__nav-list {
+    display: none;
+  }
+
+  .app__nav-small {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__nav-login {
+    display: none;
+  }
+}
