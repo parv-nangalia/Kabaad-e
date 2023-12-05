@@ -1,0 +1,24 @@
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.arrow.collapsed {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.collapsible-content {
+  padding: 10px;
+  display: block;
+  transition: max-height 0.3s ease;
+  max-height: 500px; /* Set an appropriate value */
+  overflow: hidden;
+}
+
+.collapsible-content.collapsed {
+  display: none;
+}
