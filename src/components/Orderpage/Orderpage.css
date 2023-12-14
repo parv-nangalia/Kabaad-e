@@ -1,0 +1,30 @@
+.app__order-main {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.app__order-cart {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 2px;
+}
+
+.app__order-orderdeets {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  padding: 2px;
+}
+
+.app__order-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 2px;
+}
