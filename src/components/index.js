@@ -12,6 +12,9 @@ import Orderpage from "./Orderpage/Orderpage";
 import Genericform from "./Genericform/Genericform";
 import Trackpage from "./Trackpage/Trackpage";
 import Cartitem from "./Cartitem/Cartitem";
+import Profile from "./Profile/Profile";
+import Cartvalue from "./Cartvalue/Cartvalue";
+import Trackcomp from "./Trackcomp/Trackcomp";
 
 export {
   SubHeading,
@@ -28,4 +31,7 @@ export {
   Genericform,
   Trackpage,
   Cartitem,
+  Profile,
+  Cartvalue,
+  Trackcomp,
 };

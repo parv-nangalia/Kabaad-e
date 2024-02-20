@@ -1,19 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { images } from "../../constants";
+import { CaroHome } from "..";
 import "./Start.css";
 
 const Start = () => (
   <div>
     <div className="app__start" id="start">
-      <div className="app__start-image">
-        <img src={images.award01}></img>
-      </div>
+      <br />
       <div className="app__start-heading">
-        <h2>How does this work?</h2>
+        <h2><b>How does this work?</b></h2>
       </div>
-      <div className="app__start-content">
-        <p>
+      {/* <div className="app__start-image">
+        <img src={images.cart_illus}></img>
+      </div> */}
+      {/* <div className="app__start-content"> */}
+        {/* <p>
           Start by adding all your E-waste to your cart from the wide selection
           of products that we deal in
         </p>
@@ -21,7 +23,8 @@ const Start = () => (
         <p>
           Get the equivalent amount of credit, points or gift card in your
           wallet 
-        </p>
+        </p> */}
+        <CaroHome />
         {/* <Link
           to="start"
           activeClass="active"
@@ -31,11 +34,14 @@ const Start = () => (
           >
           <button className="custom__button"> Sell Now </button>
         </Link> */}
-        <Link to="/Sell">
-          <button className="custom__button"> Sell Now </button>
-        </Link>
+      {/* </div> */}
+      {/* <CaroHome /> */}
+      <div className="app-sell"><Link to="/Sell">
+        <button className="butn"> Sell Now </button>
+      </Link>
       </div>
     </div>
+    {/* <CaroHome /> */}
   </div>
 );
 

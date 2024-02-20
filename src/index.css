@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root{
+  --var-black: rgb(7, 7, 7);
+  --var-white: rgb(212, 212, 212);
+  
+}
