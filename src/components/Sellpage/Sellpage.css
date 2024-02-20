@@ -9,12 +9,12 @@
   list-style: none;
   display: flex;
   align-self: center;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .app__sell-list ul {
   text-align: center;
-  width: 600px;
+  /* width: 600px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -27,23 +27,24 @@
   border-radius: 3px;
   background-color: aliceblue;
   text-align: center;
-  min-width: 250px;
+  min-width: 230px;
+  justify-content: center;
 }
 
 .app__sell-items {
   display: flex;
-  margin: 1rem 5rem;
-  padding: 1rem 20rem;
+  /* margin: 1rem 5rem; */
+  padding: 1rem 2rem;
   align-self: center;
   height: 100px;
   flex-wrap: wrap;
-  width: 100%;
+  /* width: 80%; */
   justify-content: center;
 }
 
 .app__sell-icons {
   display: block;
-  margin: 0.2rem 0.15rem;
+  margin: 0.2rem 1.0rem;
   padding: 1rem;
   border-radius: 8px;
   width: 150px;
@@ -61,4 +62,131 @@
 .app__sell-icon {
   width: 50px;
   height: 50px;
+}
+
+.app__sell-span{
+  font-size: medium;
+  color: indianred;
+  font-style: italic;
+}
+/* 
+.app__nav {
+  background: white;
+} */
+
+
+
+@media screen and (max-width: 1150px) and (min-width: 768px) and (orientation:portrait){
+
+  .app__sell-type{
+    min-width: 180px;
+    padding: 0.4rem;
+    font-size: 15px;
+  }
+  
+  .app__sell-icons {
+    width: 100px;
+  }
+
+}
+
+
+@media screen and (max-width: 1150px) and (min-width: 768px) and (orientation:landscape){
+
+  .app__sell-type{
+    min-width: 180px;
+    padding: 0.4rem;
+    font-size: 15px;
+  }
+  
+  .app__sell-icons {
+    width: 100px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .app__sell-type{
+    min-width: 100px;
+    padding: 0.4rem;
+    font-size: 15px;
+  }
+
+  .app__sell-icons {
+    width: 70px;
+    height: 100px;
+  }
+
+}
+
+@media screen and (max-width: 650px) { 
+  
+  .app__sell-type{
+    min-width: 50px;
+    padding: 0.25rem;
+    font-size: 11px;
+  }
+  
+  .app__sell-icons {
+    width: 60px;
+  }
+
+  .app__sell-icons > p{
+    font-size: 16px;
+  }  
+
+
+.app__sell-component {
+    display: flex;
+    margin: 0 0;
+    padding: 2rem;
+  }
+
+}
+
+
+@media screen and (max-width: 450px) { 
+  
+  
+  .app__sell-items {
+    padding: 0;
+  }
+
+  .app__sell-icons {
+    height: 60px;
+
+  } 
+
+  .app__sell-icons > p{
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+
+  .app__sell-icon {
+    width: 30px;
+    height: 30px;
+  } 
+
+  .app__sell-list > ul{
+    padding:0;
+  }
+
+  .app__sell-head{
+    font-size: 11px;;
+  }
+
+  .app__sell-type{
+    font-size: 8px;
+    margin: 8px;
+  }
+
+  .app__sell-span{
+    font-size: 14px;
+  }
+
+
 }

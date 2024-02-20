@@ -75,7 +75,7 @@ const Sellpage = ({ cart, updateCart }) => {
     <div className="app__sell-component">
       <div className="app__sell-head">
         <h2>
-          Add all the categories which you want to sell
+          Add all the categories which you want to sell <br/><span className="app__sell-span">Give details at order page</span> 
         </h2>
       </div><br />
       <div className="app__sell-list">
