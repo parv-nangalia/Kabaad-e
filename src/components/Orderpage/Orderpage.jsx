@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Genericform, Collapse, Cartitem } from "../../components";
+import { Genericform, Collapse, Cartitem, Cartvalue } from "../../components";
 import "./Orderpage.css";
 import { all } from "../../constants/icons";
 
@@ -21,13 +21,30 @@ const Orderpage = ({ Order }) => {
   });
 
   const Ordersummary = (summary) => {
-    localStorage.setItem("order_summary", summary);
+
+    let curr_summary = localStorage.getItem("order_summary");
+    let size =  1;
+
+    let summ = JSON.parse(summary);
+    console.log(summary, typeof(summary));
+
+
+    if (curr_summary === null || curr_summary === undefined) {
+      curr_summary = {}; // Initialize as an empty object
+    } else {
+      //  k curr_summary = JSON.parse(curr_summary);
+        size = Object.keys(curr_summary).length + 1;
+    }
+
+    curr_summary[size] = summ;  
+    localStorage.setItem("order_summary",JSON.stringify(curr_summary));
+    return size;
   };
 
   const PlaceOrder = () => {
     const jsonData = JSON.stringify(formValues);
-    Ordersummary(jsonData);
-    console.log("setsummary called");
+    let index = Ordersummary(jsonData);
+    console.log("setsummary called", index);
     const order = localStorage.getItem("order_summary");
     console.log(order);
 
@@ -36,7 +53,8 @@ const Orderpage = ({ Order }) => {
 
     // Use the retrieved data as needed
     console.log(parsedData);
-    navigate("/Track");
+    // localStorage.setItem("ordercart",{});
+    navigate("/Track",{ state: { ind : index } });
   };
 
   const displayCart = (cartcomp) => {
@@ -88,11 +106,11 @@ const Orderpage = ({ Order }) => {
     const storedData = localStorage.getItem("ordercart");
 
     // Parse the JSON data if it's stored as a JSON string
+    if(storedData!==null){
     const parsedData = JSON.parse(storedData);
-
     // Set the parsed data in state or use it as needed
     setitemdata(parsedData);
-
+    }
     // You might want to clear the item from local storage after fetching
     // localStorage.removeItem("ordercart");
   }, []);
@@ -108,6 +126,7 @@ const Orderpage = ({ Order }) => {
         <Cartitem jsonData={itemdata} />
       </div>
 
+      <div class="app__order_main">
       <div className="app__order-orderdeets">
         <h3>Contact Details</h3>
         <div
@@ -142,6 +161,10 @@ const Orderpage = ({ Order }) => {
         <button onClick={PlaceOrder} style={{ display: formVisibility.submit }}>
           Place Order
         </button>
+      </div>
+      <div class="app__cart_price">
+        {/* <Cartvalue cart={modifiedcart}/> */}
+      </div>
       </div>
     </div>
   );

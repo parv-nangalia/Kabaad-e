@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
-import images from "../../constants/images";
+import images from "../../constants/images";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 import "./Navbar.css";
 
 const Navbar = ({cartVal}) => {
@@ -16,18 +16,18 @@ const Navbar = ({cartVal}) => {
     <nav className="app__nav">
       <div className="app__nav-logo">
         <Link to="/">
-          <img src={images.gericht} alt="logo" />
+          <img src={images.logo} alt="logo" />
         </Link>
       </div>
       <ul className="app__nav-list">
         <li className="p__opensans">
-          <div href="/">Home</div>
+          <Link to="/" className="p__opensans">Home</Link>
         </li>
         <li className="p__opensans">
-        <div href="/Sell">Sell E-Waste</div>
+        <Link to="/Sell" className="p__opensans">Sell E-Waste</Link>
         </li>
         <li className="p__opensans">
-        <div href="/About">About</div>
+        <Link to="/About" className="p__opensans">About</Link>
         </li>
         {/* <li className="p__opensans">
         <a href="#Home">Contact</a>
@@ -36,7 +36,7 @@ const Navbar = ({cartVal}) => {
         <a href="#Home">FAQ</a>
       </li> */}
         <li className="p__opensans">
-        <div href="#Home">Profile</div>
+        <Link to="/Profile" className="p__opensans">Profile</Link>
         </li>
       </ul>
       <div className="app__nav-login">
@@ -48,7 +48,7 @@ const Navbar = ({cartVal}) => {
       </div>
       <div className="app__nav-small">
         <GiHamburgerMenu
-          color="#fff"
+          color="#000"
           fontSize={27}
           onClick={() => setToggleMenu(true)}
         />
@@ -77,7 +77,7 @@ const Navbar = ({cartVal}) => {
             <a href="#Home">FAQ</a>
           </li> */}
               <li className="p__opensans">
-                <a href="/Track">Profile</a>
+                <a href="/Profile">Profile</a>
               </li>
             </ul>
           </div>

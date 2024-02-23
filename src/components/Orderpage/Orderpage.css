@@ -15,9 +15,17 @@
 .app__order-orderdeets {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: auto;
+  width: 60%;
   padding: 2px;
+}
+
+.app__order_main{
+  display: flex;
+}
+
+.app__cart_price{
+  display: flex;
+  width: 40%;
 }
 
 .app__order-form {
@@ -27,4 +35,5 @@
   margin: auto;
   flex-wrap: wrap;
   padding: 2px;
+  height: fit-content;
 }
