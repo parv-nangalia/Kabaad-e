@@ -2,7 +2,7 @@
 import './App.css';
 
 // function App() {
-//   return (
+//   return 
 //     <div className="App">
 //       <header className="App-header">
 //         <img src={logo} className="App-logo" alt="logo" />
@@ -34,6 +34,7 @@ import {
   Cartpage,
   Orderpage,
   Trackpage,
+  Profile,
 } from "./components";
 import { AboutUs, Footer } from "./container";
 import "./App.css";
@@ -81,19 +82,17 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <Router basename="">
       <div>
         <Navbar cartVal={cartVal} />
         <Routes>
           <Route path="/" exact element={<Homepage />} />
-          <Route
-            path="/Sell"
-            element={<Sellpage cart={cart} updateCart={updateCart} />}
-          />
+          <Route path="/Sell" element={<Sellpage cart={cart} updateCart={updateCart} />} />
           <Route path="/About" element={<AboutUs />} />
           <Route path="/Cart" element={<Cartpage cart={cart} />} />
           <Route path="/Order" element={<Orderpage order={ordercart} />} />
           <Route path="/Track" element={<Trackpage />} />
+          <Route path="/Profile" element={<Profile />} />
         </Routes>
       </div>
     </Router>
