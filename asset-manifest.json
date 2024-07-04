@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/Kabaad-e/static/css/main.4b0833da.css",
-    "main.js": "/Kabaad-e/static/js/main.70a34d17.js",
+    "main.css": "/Kabaad-e/static/css/main.e5bbb761.css",
+    "main.js": "/Kabaad-e/static/js/main.ebd38040.js",
     "static/js/787.205fe1e5.chunk.js": "/Kabaad-e/static/js/787.205fe1e5.chunk.js",
     "static/media/bg.png": "/Kabaad-e/static/media/bg.3d421b1b5682e1b67deb.png",
     "static/media/cart-illus.png": "/Kabaad-e/static/media/cart-illus.7e31a26b52a98d9dcc4f.png",
     "static/media/pickup.png": "/Kabaad-e/static/media/pickup.9ddf9d33bcc2b5908adc.png",
     "static/media/old-tech.jpg": "/Kabaad-e/static/media/old-tech.60fc37c0ffdd9e2761a1.jpg",
+    "static/media/Footer.png": "/Kabaad-e/static/media/Footer.61b79d378ea7c3b54aaf.png",
     "static/media/overlaybg.png": "/Kabaad-e/static/media/overlaybg.165362eea72d1614ae28.png",
     "static/media/wallet.png": "/Kabaad-e/static/media/wallet.4fd33a4f83d15dea2e6d.png",
     "static/media/Logo_kabaad-e.png": "/Kabaad-e/static/media/Logo_kabaad-e.bfb04559571bfed1b07d.png",
     "index.html": "/Kabaad-e/index.html",
     "static/media/spoon.svg": "/Kabaad-e/static/media/spoon.d079f43fbcf509908d3865293080795a.svg",
-    "main.4b0833da.css.map": "/Kabaad-e/static/css/main.4b0833da.css.map",
-    "main.70a34d17.js.map": "/Kabaad-e/static/js/main.70a34d17.js.map",
+    "main.e5bbb761.css.map": "/Kabaad-e/static/css/main.e5bbb761.css.map",
+    "main.ebd38040.js.map": "/Kabaad-e/static/js/main.ebd38040.js.map",
     "787.205fe1e5.chunk.js.map": "/Kabaad-e/static/js/787.205fe1e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b0833da.css",
-    "static/js/main.70a34d17.js"
+    "static/css/main.e5bbb761.css",
+    "static/js/main.ebd38040.js"
   ]
 }
