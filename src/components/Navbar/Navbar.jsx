@@ -24,10 +24,10 @@ const Navbar = ({cartVal}) => {
           <Link to="/" className="p__opensans">Home</Link>
         </li>
         <li className="p__opensans">
-        <Link to="/Sell" className="p__opensans">Sell E-Waste</Link>
+          <Link to="/Sell" className="p__opensans">Sell E-Waste</Link>
         </li>
         <li className="p__opensans">
-        <Link to="/About" className="p__opensans">About</Link>
+          <Link to="/About" className="p__opensans">About</Link>
         </li>
         {/* <li className="p__opensans">
         <a href="#Home">Contact</a>
@@ -40,11 +40,11 @@ const Navbar = ({cartVal}) => {
         </li>
       </ul>
       <div className="app__nav-login">
-        <a href="/Cart" className="p__opensans">
+        <Link to="/Cart" className="p__opensans">
         <Badge color="secondary" badgeContent={cartVal}>
                 <ShoppingCartIcon />{" "}
         </Badge>
-        </a>
+        </Link>
       </div>
       <div className="app__nav-small">
         <GiHamburgerMenu
@@ -62,13 +62,13 @@ const Navbar = ({cartVal}) => {
             />
             <ul className="app__nav-small-list">
               <li className="p__opensans">
-                <a href="/">Home</a>
+                <Link to="/" className="p__opensans"  onClick={() => setToggleMenu(false)} >Home</Link>
               </li>
               <li className="p__opensans">
-                <a href="/Sell">Sell E-Waste</a>
+                <Link to="/Sell" className="p__opensans"  onClick={() => setToggleMenu(false)} >Sell E-Waste</Link>
               </li>
               <li className="p__opensans">
-                <a href="/AboutUs">About</a>
+                <Link to="/About" className="p__opensans"  onClick={() => setToggleMenu(false)} >About</Link>
               </li>
               {/* <li className="p__opensans">
             <a href="#Home">Contact</a>
@@ -77,9 +77,17 @@ const Navbar = ({cartVal}) => {
             <a href="#Home">FAQ</a>
           </li> */}
               <li className="p__opensans">
-                <a href="/Profile">Profile</a>
+                <Link to="/Profile" className="p__opensans"  onClick={() => setToggleMenu(false)} >Profile</Link>
+              </li>
+              <li className="p__opensans">
+                <Link to="/Cart" onClick={() => setToggleMenu(false)}>
+                  <Badge color="secondary" badgeContent={cartVal}>
+                          <ShoppingCartIcon />{" "}
+                  </Badge>
+                </Link>
               </li>
             </ul>
+           
           </div>
         )}
       </div>
