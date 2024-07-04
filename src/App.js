@@ -26,7 +26,7 @@ import './App.css';
 
 
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Link, redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link, Navigate } from "react-router-dom";
 import {
   Navbar,
   Homepage,
@@ -82,12 +82,12 @@ const App = () => {
   };
 
   return (
-    <Router basename="">
-      <redirect exact from="/" to="/home" />
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Navbar cartVal={cartVal} />
         <Routes>
-          <Route path="/home" exact element={<Homepage />} />
+          {/* <Route path="/" element={<Navigate to="/Home" />} /> */}
+          <Route path="/" element={<Homepage />} />
           <Route path="/Sell" element={<Sellpage cart={cart} updateCart={updateCart} />} />
           <Route path="/About" element={<AboutUs />} />
           <Route path="/Cart" element={<Cartpage cart={cart} />} />
