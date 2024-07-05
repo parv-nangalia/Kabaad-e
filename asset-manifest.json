@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Kabaad-e/static/css/main.e5bbb761.css",
-    "main.js": "/Kabaad-e/static/js/main.ebd38040.js",
+    "main.css": "/Kabaad-e/static/css/main.d16224c7.css",
+    "main.js": "/Kabaad-e/static/js/main.539e6c8b.js",
     "static/js/787.205fe1e5.chunk.js": "/Kabaad-e/static/js/787.205fe1e5.chunk.js",
     "static/media/bg.png": "/Kabaad-e/static/media/bg.3d421b1b5682e1b67deb.png",
     "static/media/cart-illus.png": "/Kabaad-e/static/media/cart-illus.7e31a26b52a98d9dcc4f.png",
@@ -13,12 +13,12 @@
     "static/media/Logo_kabaad-e.png": "/Kabaad-e/static/media/Logo_kabaad-e.bfb04559571bfed1b07d.png",
     "index.html": "/Kabaad-e/index.html",
     "static/media/spoon.svg": "/Kabaad-e/static/media/spoon.d079f43fbcf509908d3865293080795a.svg",
-    "main.e5bbb761.css.map": "/Kabaad-e/static/css/main.e5bbb761.css.map",
-    "main.ebd38040.js.map": "/Kabaad-e/static/js/main.ebd38040.js.map",
+    "main.d16224c7.css.map": "/Kabaad-e/static/css/main.d16224c7.css.map",
+    "main.539e6c8b.js.map": "/Kabaad-e/static/js/main.539e6c8b.js.map",
     "787.205fe1e5.chunk.js.map": "/Kabaad-e/static/js/787.205fe1e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5bbb761.css",
-    "static/js/main.ebd38040.js"
+    "static/css/main.d16224c7.css",
+    "static/js/main.539e6c8b.js"
   ]
 }
