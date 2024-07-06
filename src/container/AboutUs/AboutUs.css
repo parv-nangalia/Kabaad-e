@@ -1,0 +1,36 @@
+.app__about-main{
+    display: flex;
+    margin: 5%;
+    padding:5%;
+    margin-top: 1%;
+}
+
+.app__about-parent{
+
+}
+
+.app__about-parent-para{
+    display: flex;
+}
+
+
+
+
+
+@media screen and (max-width: 1150px) {
+
+  
+}
+
+@media screen and (max-width: 1150px) and (min-width: 768px) and (orientation:portrait){
+
+}
+
+@media screen and (max-width: 768px) {
+
+  
+}
+
+@media screen and (max-width: 650px) {
+
+}

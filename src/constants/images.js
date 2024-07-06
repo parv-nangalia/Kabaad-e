@@ -7,6 +7,7 @@ import header_img from "../assets/old-tech.jpg";
 import cart_illus from "../assets/cart-illus.png";
 import pickup from "../assets/pickup.png";
 import wallet from "../assets/wallet.png";
+import footer from "../assets/Footer.png";
 
 
 export default {
@@ -18,4 +19,5 @@ export default {
   cart_illus,
   pickup,
   wallet,
+  footer,
 };
