@@ -22,3 +22,86 @@
 .collapsible-content.collapsed {
   display: none;
 }
+
+@media screen and (max-width: 1150px) {
+
+
+
+}
+
+@media screen and (max-width: 1150px) and (min-width: 768px) and (orientation:portrait){
+
+  .collapsible-header{
+    font-size: 16px;
+  }
+
+  .collapsible-content {
+    font-size: 15px;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .collapsible-header{
+    font-size: 14px;
+  }
+
+  .collapsible-content {
+    font-size: 13px;
+  }
+
+  .collapsible-content > select{
+    width: 20%;
+  }
+
+  .collapsible-content select, .collapsible-content input{
+    width: 75%;
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .collapsible-header{
+    font-size: 10px;
+  }
+
+  .collapsible-content {
+    font-size: 11px;
+  }
+
+  .collapsible-content select, .collapsible-content input{
+    width: 60%;
+  }
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+  .collapsible-header{
+    padding:4%;
+    font-size: 10px;
+  }
+
+  .form__submit{
+    padding-top: 4%;
+  }
+
+  .form__submit > *{
+    font-size: 10px;
+  }
+
+  .collapsible-content {
+    font-size: 8px;
+  }
+
+  .collapsible-content select, .collapsible-content input{
+    width: 80%;
+    font-size: 8px;
+  }
+
+}

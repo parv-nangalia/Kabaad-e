@@ -37,3 +37,38 @@
   padding: 2px;
   height: fit-content;
 }
+
+@media screen and (max-width: 1150px) {
+
+
+.Cart__icon > svg{
+  height: 40%;
+  width: 40%;
+
+}
+
+  
+}
+
+@media screen and (max-width: 1150px) and (min-width: 768px) and (orientation:portrait){
+
+}
+
+@media screen and (max-width: 768px) {
+
+        
+}
+
+@media screen and (max-width: 650px) {
+
+    
+
+}
+
+
+@media screen and (max-width: 325px) {
+
+}
+
+
+

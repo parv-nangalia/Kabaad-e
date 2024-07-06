@@ -98,6 +98,7 @@
   height: auto;
   display: flex;
   margin: auto;
+
 }
 
 .carousel-slide p {
@@ -105,6 +106,7 @@
   font-size: 30px;
   padding-inline: 20%;
   color: aliceblue;
+  transition: transform 0.5s ease;
   height: 20px;
 }
 
