@@ -6,13 +6,6 @@ const Homepage = () => (
   <div>
     <Header />
     <Start />
-    <AboutUs />
-    {/* <SpecialMenu />
-    <Chef />
-    <Intro />
-    <Laurels />
-    <Gallery /> */}
-    <FindUs />
     <Footer />
   </div>
 );

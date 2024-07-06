@@ -63,7 +63,7 @@ const Sellpage = ({ cart, updateCart }) => {
     //console.log(IconComponent);
     //const obj = {key : product, Component: IconComponent};
     if(cart.some(item => item.key === product.key)){
-      alert("item alreadye xists")
+      alert("item already exists")
     }
     else{
       const update = [...cart,product];
@@ -78,6 +78,9 @@ const Sellpage = ({ cart, updateCart }) => {
           Add all the categories which you want to sell <br/><span className="app__sell-span">Give details at order page</span> 
         </h2>
       </div><br />
+      <div class="app__sell-cart">
+        
+      </div>
       <div className="app__sell-list">
         <ul>
           {list.map((type) => (
