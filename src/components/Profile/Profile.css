@@ -1,0 +1,65 @@
+.profile__page{
+    display: flex;
+    margin-inline: 3%;
+    flex-direction: row;
+    padding: 4%;
+}
+
+.profile__page > * {
+    margin: 3%;
+}
+
+/* .app__navigator > *{
+    display: flex;
+} */
+
+.profile__cards{
+    display: block;
+    padding: 3%;
+    margin: 5%;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.profile__heading{
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.app__navigator{
+    padding:1%;
+}
+
+.app__navigator > span {
+    line-height: 30px;
+    padding: 4%;
+    /* word-spacing: 5px; */
+}
+
+.active{
+    font-weight: 600;
+    /* background-color: rgb(199, 199, 199); */
+    border-radius: 5px;
+}
+
+.app__navigator > * {
+    display: inline-block;
+    padding: 2%;
+    margin-right: 1%;
+    /* background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 4px; */
+}
+
+span:hover{
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+    /* background-color: rgb(184, 184, 184); */
+}
+
+.profile__activity{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
