@@ -30,7 +30,7 @@
 
 .app__footer-content{
     display: flex;
-    z-index: 15;
+    /* z-index: 15; */
     width: 70%;
     color: white;
     padding-left: 4%;

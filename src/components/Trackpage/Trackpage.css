@@ -1,0 +1,33 @@
+.app__track{
+    margin-top: 2%;
+    display: flex;
+    padding-inline: 11%;
+    flex-direction: column;
+}
+
+.track__div{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.track__flex{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    background-color: lightgray;
+    margin: 2%;
+    border-radius: 8px;
+    padding: 1%;
+    text-align: center;
+}
+
+.track__flex > h4{
+    background-color: white;
+    display: block;
+    align-self: center;
+    width: max-content;
+    border-radius: 5px;
+    padding: 1%;
+
+}
